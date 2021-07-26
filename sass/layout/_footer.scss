@@ -1,0 +1,54 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--background-color-dark);
+
+  &__adress {
+    margin-right: 70px;
+  }
+
+  &__social {
+    margin-top: 12px;
+    margin-right: 93px;
+  }
+
+  &__subscription {
+    margin-top: 12px;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: var(--main-text-size);
+    line-height: 1.14;
+    letter-spacing: var(--main-text-letter-spacing);
+    color: var(--main-color-light);
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    margin-right: 12px;
+    width: 358px;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: var(--secondary-text-size);
+    line-height: 1.25;
+    color: var(--main-color-light);
+    background-color: transparent;
+    outline: none;
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+      color: var(--secondary-color-light-transp);
+    }
+  }
+}

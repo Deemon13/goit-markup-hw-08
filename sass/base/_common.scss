@@ -1,0 +1,42 @@
+.section {
+  padding: 94px 0;
+  text-align: center;
+
+  &--features {
+    padding-bottom: 47px;
+  }
+
+  &--services {
+    padding-top: 47px;
+  }
+
+  &--team {
+    background-color: var(--background-color-light);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+
+  &--footer {
+    display: flex;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  font-size: inherit;
+  text-decoration: none;
+  color: var(--main-color-dark);
+}
+
+.button-base {
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--main-color-dark);
+}

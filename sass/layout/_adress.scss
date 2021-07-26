@@ -1,0 +1,19 @@
+.adress {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 9px;
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--main-color-light);
+    transition: color var(--main-transition-duration) var(--main-transition-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
