@@ -2,6 +2,21 @@
   padding: 60px 0;
   background-color: var(--background-color-dark);
 
+  &__logo {
+    display: block;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: var(--main-color-light);
+
+    &--accent {
+      color: var(--accent-color);
+    }
+  }
+
   &__adress {
     margin-right: 70px;
   }

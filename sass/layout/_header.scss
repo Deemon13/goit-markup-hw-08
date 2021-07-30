@@ -4,10 +4,33 @@
   &__container {
     display: flex;
     align-items: center;
-    padding: 24px 0 25px;
   }
 
   &__contacts {
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-right: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    // justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }

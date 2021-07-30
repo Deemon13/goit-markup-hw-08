@@ -12,9 +12,20 @@
     <!-- HEADER -->
     <header class="header" id="header">
       <div class="header__container container">
-        <nav class="navigation">
-          <a href="./index.html" class="logo link navigation__logo" lang="en"
+        <div class="menu">
+          <a href="./index.html" class="logo link" lang="en"
             ><span class="logo__accent">Web</span>Studio</a
+          >
+          <div class="menu__container">
+            <svg class="menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </div>
+        </div>
+
+        <nav class="navigation">
+          <a href="./index.html" class="navigation__logo link" lang="en"
+            ><span class="navigation__logo--accent">Web</span>Studio</a
           >
           <ul class="navigation__list list">
             <li class="navigation__item">
@@ -411,8 +422,8 @@
     <footer class="footer">
       <div class="container container--footer">
         <div class="footer__adress">
-          <a class="logo logo--footer link" href="#header" lang="en"
-            ><span class="logo__accent">Web</span>Studio</a
+          <a class="footer__logo link" href="#header" lang="en"
+            ><span class="footer__logo--accent">Web</span>Studio</a
           >
 
           <address class="adress" id="contacts">

@@ -1,17 +1,9 @@
 .logo {
   display: block;
-  // font-family: var(--font-logotype);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 0.86;
   color: var(--secondary-color-dark);
-
-  &--footer {
-    margin-right: 0;
-    margin-bottom: 20px;
-    padding: 0;
-    color: var(--main-color-light);
-  }
 
   &__accent {
     color: var(--accent-color);
