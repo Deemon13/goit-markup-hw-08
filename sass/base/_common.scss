@@ -3,7 +3,8 @@
   text-align: center;
 
   &--features {
-    padding-bottom: 47px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &--services {
@@ -37,6 +38,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .section--features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+
   .container {
     max-width: 1200px;
   }
