@@ -386,7 +386,7 @@ ul {
 }
 
 .section--services {
-  padding-top: 47px;
+  display: none;
 }
 
 .section--team {
@@ -418,6 +418,10 @@ ul {
   .section--features {
     padding-top: 94px;
     padding-bottom: 47px;
+  }
+  .section--services {
+    display: block;
+    padding-top: 47px;
   }
   .container {
     max-width: 1200px;
@@ -572,6 +576,37 @@ ul {
   .features__item {
     flex-basis: calc((100% - 120px) / 4);
   }
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.services__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.services__container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 27px 15px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--background-color-dark);
+  opacity: 0.8;
+}
+
+.services__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--main-color-light);
 }
 
 .logo {

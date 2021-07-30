@@ -8,7 +8,7 @@
   }
 
   &--services {
-    padding-top: 47px;
+    display: none;
   }
 
   &--team {
@@ -38,9 +38,16 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .section--features {
-    padding-top: 94px;
-    padding-bottom: 47px;
+  .section {
+    &--features {
+      padding-top: 94px;
+      padding-bottom: 47px;
+    }
+
+    &--services {
+      display: block;
+      padding-top: 47px;
+    }
   }
 
   .container {
