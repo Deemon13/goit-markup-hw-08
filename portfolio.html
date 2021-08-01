@@ -15,7 +15,7 @@
           <a href="./index.html" class="logo link" lang="en"
             ><span class="logo__accent">Web</span>Studio</a
           >
-          <div class="menu__container">
+          <div class="menu__container" data-menu-open>
             <svg class="menu__icon" width="40" height="40">
               <use href="./images/icons.svg#menu"></use>
             </svg>
@@ -31,7 +31,7 @@
               <a class="navigation__link link" href="./index.html">Студия</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current link" href="№">Портфолио</a>
+              <a class="navigation__link navigation__link--current link" href="#">Портфолио</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link link" href="#contacts">Контакты</a>
@@ -62,6 +62,94 @@
         </ul>
       </div>
     </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-menu__closer" type="button" data-menu-close>
+        <svg class="mobile-menu__icon" width="19" height="19">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu__navigation list">
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--nav link"
+              href="./index.html"
+              data-menu-close
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--nav mobile-menu__link--current link"
+              href="#"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--nav link"
+              href="#contacts"
+              data-menu-close
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__contacts list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link mobile-menu__link--tel link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--mail link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social list">
+          <li class="mobile-menu__item--social">
+            <a
+              class="mobile-menu__link mobile-menu__link--social link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__item--social">
+            <a
+              class="mobile-menu__link mobile-menu__link--social link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__item--social">
+            <a
+              class="mobile-menu__link mobile-menu__link--social link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__item--social">
+            <a
+              class="mobile-menu__link mobile-menu__link--social link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <!-- COLLECTION -->
@@ -787,5 +875,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
