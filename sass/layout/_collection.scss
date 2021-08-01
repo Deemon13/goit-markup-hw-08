@@ -1,13 +1,6 @@
 .collection {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-
-  &__item {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -23,6 +16,33 @@
     &:hover .overlay,
     &:focus .overlay {
       transform: translateY(-100%);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 60px) / 2);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .collection {
+    &__item {
+      flex-basis: calc((100% - 90px) / 3);
     }
   }
 }
