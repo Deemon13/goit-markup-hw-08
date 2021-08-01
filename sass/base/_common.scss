@@ -1,11 +1,6 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
   text-align: center;
-
-  &--features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
   &--services {
     display: none;
@@ -13,8 +8,6 @@
 
   &--team {
     background-color: var(--background-color-light);
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -41,19 +34,15 @@
 
 @media screen and (min-width: 1200px) {
   .section {
+    padding: 94px 0;
+
     &--features {
-      padding-top: 94px;
       padding-bottom: 47px;
     }
 
     &--services {
       display: block;
       padding-top: 47px;
-    }
-
-    &--team {
-      padding-top: 94px;
-      padding-bottom: 94px;
     }
   }
 

@@ -6,11 +6,10 @@
   margin-left: -30px;
 
   &__item {
-    width: 170px;
     height: 92px;
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 180px) / 6);
+    flex-basis: calc((100% - 60px) / 2);
   }
 
   &__link {
@@ -29,6 +28,22 @@
     &:focus {
       fill: var(--accent-color);
       border-color: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    &__item {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__item {
+      flex-basis: calc((100% - 180px) / 6);
     }
   }
 }
