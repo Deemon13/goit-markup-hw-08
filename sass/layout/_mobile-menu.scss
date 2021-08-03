@@ -34,7 +34,6 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -117,6 +116,11 @@
 
 @media screen and (max-width: 479px) {
   .mobile-menu {
+    &__closer {
+      width: 25px;
+      height: 25px;
+    }
+
     &__item:not(:last-child) {
       margin-bottom: 18px;
     }
